@@ -13,13 +13,13 @@ nav{
     background-color: #fff;
     height: 3.3em;
     line-height: 3.3em;
-    padding: 0 13.3em;
+    padding: 0;
     border-bottom: 0.1px solid #dbdbdd;
 }
 
 .logo{
     text-decoration: none;
-
+    padding-left: 90px;
 }
 
 .logo>img{
@@ -116,7 +116,7 @@ nav{
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 1.5em;
+    row-gap: 2em;
     margin-bottom: 2em;
 }
 
@@ -170,15 +170,36 @@ sup{
     vertical-align: middle;
     color: gray;
 }
-@media screen and (min-width: 480px) {
-   
-    .bio{
-        height: 15em;
+@media screen and (max-width: 700px){
+    .wrapper{
+        width: 100%;
+        padding-right: 90px;
     }
+
+    nav .holder{
+        background-color: #fff;
+        height: 10em;
+        line-height: 3.3em;
+        border-bottom: 0.1px solid #dbdbdd;
+        width: 300px;
+    }
+
+    .holder{
+        display: grid;
+        height: 100%;
+        width: 100%;
+    }
+
     .search{
-        margin-left: 10em;
+        margin-left: 19em auto;
+        height: 100%;
     }
-    .nav-links{
-        margin-left: 10em;
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2em;
+        margin-bottom: 2em;
+        margin-left: auto;
     }
 }
