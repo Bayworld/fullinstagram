@@ -40,11 +40,12 @@ nav{
 }
 
 .nav-links{
-    margin-left: 7em;
+    margin-left: 5em;
 }
 
 .nav-links>a{
     margin-left: 1em;
+    font-size: 12px;
 }
 
 .nav-links i{
